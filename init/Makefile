@@ -8,7 +8,7 @@ all: zsh vim ssh
 
 zsh:
 	rm -rf ~/.config/zsh ~/.zshrc
-	git clone git://github.com/seebi/zshrc.git ~/.config/zsh
+	git clone git://github.com/pfrischmuth/zshrc.git ~/.config/zsh
 	cd ~/.config/zsh && make -B install
 
 vim:
@@ -24,6 +24,6 @@ vim:
 ssh:
 	mkdir -p ~/.ssh/
 	rm -rf ~/.ssh/authorized_keys
-	echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAA+QCqLroD36lPqezLOD9YANdv0l0t5SizRFOF8b+wtARsD/2D2PuHYi+qucxruPbNO8ys/oeRJqmZCeirHwaSDtg3uFjD/OwcQ8BHEonr/6ECwM3cBAbdRNX6dCjTb6BcnUKZQHkNcl9eTaPVOjQIQhM0WBduOmVwgZLBqBwDbzJqpPBiisiK5H66GUH3NrTvWkFqs32tebSu9GgrQro58Wp4rtYUH221emhz2lXpa26vM3w9Ji9516VlXXSgiCDvkOzTk/Z2S9e0OX/ENDuBpXtiH/tiTEnyxcqVW/Hrl+pWERSI2E11AWxAQHL4GTCRso0vPmLliS9JEQ==" >~/.ssh/authorized_keys
+	echo "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAwFqCgkEIJFxeXVCOJzmsx5Hx21KE5JLy7J42B8YG5aoDflg143jqnwCHgj2zPgT3RcRvlvWvd5mir2DnHEhm78fiHR9RIdEAPTDPy8JN3vfd86eu7wld/ZSIviZ8kqP5XKC2hrgLsEd1WtRuK+FEUas/k0vsymdaqnURrNrAacYRy+cepvYhKdCpMMzKQr25uMhsmX6lsDo6MjBAo6U9TdBMHNWurlIDC7hMVVQ2B/GIeTmWU4NkXK5mTtANSM7BzSSJGA3orqHIfnLbJT151QBAruMTZdb3JP7XmZbWlBUEIE3wODe852lQqSg2FkCj0SFG2UO4RjcrmmlBlTo8EQ==" >~/.ssh/authorized_keys
 
 

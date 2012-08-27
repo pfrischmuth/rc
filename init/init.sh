@@ -6,8 +6,8 @@
 #
 
 # needed packages
-packages="make zsh git exuberant-ctags byobu"
-username="seebi"
+packages="make zsh git-core exuberant-ctags byobu"
+username="pfrischmuth"
 
 if [ "$USER" = "root" ]; then
     apt-get update
@@ -25,7 +25,7 @@ if [ "$USER" = "$username" ]; then
     # this will setup git, ssh, vim, zsh, ...
     rcdir=~/.config/rc
     rm -rf $rcdir
-    git clone git://github.com/seebi/rc.git $rcdir
+    git clone git://github.com/pfrischmuth/rc.git $rcdir
     cd $rcdir/init
     make -B all
 fi
